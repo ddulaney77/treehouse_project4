@@ -6,35 +6,59 @@
 
 :root {
   background-color: cadetblue;
+}
 
-}
-}
 body {
-  display: flex;
   width:90%;
+  margin: 0 auto;
 }
+
+.header {
+display: flex;
+flex-direction: column;
+height: 150px;
+background-color: darkslategrey;
+border-bottom: 2px solid lightgrey;
+}
+
 h1 {
 font-size: 48px;
-background-color:darkslategrey;
 color:linen;
-height: 100px;
+padding-left:15px;
 }
+
 h3 {
 font-family: cursive;
-background-color: darkslategrey;
 font-size: 36px;
 color:linen;
-height:50px;
-border-bottom: 2px solid lightgrey;
-
+padding-left: 25px;
+padding-bottom: 5px;
 }
-.input {
-height: 50px;
-width:150px;
+
+.info {
+  display: inline-block;
+  padding-top: 15px;
+}
+
+.search {
+font-size: 16px;
+opacity: 70%;
+text-align: right;
+height: 45px;
+width:500px;
 margin: 0 auto;
-color: slategrey;
-
+color: lightgrey;
 }
+
+button {
+background-color: coral;
+color: linen;
+font-size: 18px;
+width:100px;
+height: 45px;
+border-radius: 5px;
+}
+
 .gallery {
   display: flex;
   flex-direction: row;
@@ -42,8 +66,9 @@ color: slategrey;
   justify-content: space-between;
   margin: 10px auto;
   padding:6px;
-
+  padding-top: 100px;
 }
+
 img {
   padding: 6px;
   max-width: 100%;
@@ -51,7 +76,6 @@ img {
   flex-basis: 1 30%;
   filter: grayscale(100%);
   transition: 1s;
-
 }
 
 img:hover {
