@@ -19,6 +19,15 @@ background-color:darkslategrey;
 color:linen;
 height: 100px;
 }
+h3 {
+font-family: cursive;
+background-color: darkslategrey;
+font-size: 36px;
+color:linen;
+height:50px;
+border-bottom: 2px solid lightgrey;
+
+}
 .input {
 height: 50px;
 width:150px;
