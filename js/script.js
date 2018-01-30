@@ -4,16 +4,19 @@
 
 
 $(."search").on("keyup", function () {
-  var filter =$(this).val().toLowerCase();
+  const filter =$(this).val().toLowerCase();
+or
+$(."search".).on("keyup", function () {
+   const filter=$(this).chnage().toLowerCase();
 
+
+}
 
   $(."example-light").each( function () {
 
-if ( $(this) ).attr('title').toLowerCase().search( new RegExp(filter))<0
+if ( $(this) ).attr("alt")
   $(this).fadeOut();
 } else {
   $(this).show();
 }
-});
-
 });

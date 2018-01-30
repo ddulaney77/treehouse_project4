@@ -65,6 +65,7 @@ border-radius: 5px;
 .gallery {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   margin: 0 auto;
   padding:6px;
   padding-top: 100px;
@@ -111,7 +112,7 @@ transform: scale(1.1);
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 10px auto;
+  margin: 0 auto;
   padding:6px;
   padding-top: 100px;
 }
