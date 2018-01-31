@@ -45,8 +45,8 @@ h1,h3 {
   padding-top: 15px;
 }
 
-
 .search {
+background-color: burlywood;
 font-size: 16px;
 opacity: 70%;
 text-align: left;
@@ -55,13 +55,16 @@ width:235px;
 margin: 0 auto;
 color: grey;
 border-radius: 5px;
-
 }
+
 .search::placeholder {
-  color: lightgrey;
+  color: linen;
   text-align: right;
 }
 
+.search:focus {
+  background-color: linen;
+}
 
 
 .gallery {

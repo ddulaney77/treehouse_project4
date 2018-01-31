@@ -1,22 +1,24 @@
+$(document).ready(function() {
+  $(".gallery").lightbox-plus-jquery ({
+    delegate: 'a',
+    type:'image',
+
+    gallery: {
+      enabled:true
+    }
+  })
+})
 
 
-//filter
 
+$(".search").on("keyup", function() {
+  const input =$(this).val().toLowerCase();
+  $(".example-light").each(function() {
 
-$(."search").on("keyup", function () {
-  const filter =$(this).val().toLowerCase();
-or
-$(."search".).on("keyup", function () {
-   const filter=$(this).chnage().toLowerCase();
-
-
-}
-
-  $(."example-light").each( function () {
-
-if ( $(this) ).attr("alt")
-  $(this).fadeOut();
+if ( $(this) ).attr("data-title").toLowerCase().search(new regExp(filter))< 0){
+  $(this).hide();
 } else {
   $(this).show();
 }
+});
 });
