@@ -42,23 +42,23 @@ h1,h3 {
 .info {
   display: flex;
   justify-content: center;
+  align-content: center;
   padding-top: 15px;
 }
 
 .search {
-background-color: burlywood;
+background-color: lightcyan;
 font-size: 16px;
-opacity: 70%;
 text-align: left;
-height: 46px;
-width:235px;
+height: 45px;
+width:230px;;
 margin: 0 auto;
 color: grey;
 border-radius: 5px;
 }
 
 .search::placeholder {
-  color: linen;
+  color: lightslategrey;
   text-align: right;
 }
 
@@ -66,11 +66,11 @@ border-radius: 5px;
   background-color: linen;
 }
 
-
 .gallery {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
   margin: 0 auto;
   padding:6px;
   padding-top: 50px;
@@ -100,6 +100,10 @@ filter: grayscale(0);
 transform: scale(1.1);
 }
 
+#lightbox {
+  text-align: center;
+  font-size: 16px;
+}
 
 
 /*media query*/
@@ -132,7 +136,7 @@ a.example-light {
   padding: 6px;
   max-width: 100%;
   height: 200px;
-  flex-basis: 1 45%;
+  flex-basis: 45%;
   filter: grayscale(100%);
   transition: 1s;
 }
@@ -161,6 +165,6 @@ transform: scale(1.1);
 
 
   .gallery img {
-  flex-basis: 1 25%;
+  flex-basis: 25%;
 }
 }
