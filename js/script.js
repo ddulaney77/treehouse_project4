@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+$("#lightbox").css("text-align", "center");
 
 $(".search").on("keyup", function() {
   var input = $(this).val().toLowerCase();

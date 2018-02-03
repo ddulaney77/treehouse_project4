@@ -55,6 +55,7 @@ width:230px;;
 margin: 0 auto;
 color: grey;
 border-radius: 5px;
+cursor:pointer;
 }
 
 .search::placeholder {
@@ -70,7 +71,6 @@ border-radius: 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
   margin: 0 auto;
   padding:6px;
   padding-top: 50px;
@@ -82,6 +82,7 @@ a.example-light {
   width: 300px;
   height: 250px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .gallery img {
@@ -100,10 +101,12 @@ filter: grayscale(0);
 transform: scale(1.1);
 }
 
-#lightbox {
-  text-align: center;
-  font-size: 16px;
+.lb-data .lb-details {
+text-align: center;
+font-size: 15px;
+
 }
+
 
 
 /*media query*/
@@ -120,7 +123,7 @@ transform: scale(1.1);
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 auto;
-  padding:6px;
+  padding:4px;
   padding-top: 50px;
 }
 
@@ -165,6 +168,6 @@ transform: scale(1.1);
 
 
   .gallery img {
-  flex-basis: 25%;
+  flex-basis: 22%;
 }
 }
